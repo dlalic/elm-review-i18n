@@ -23,7 +23,7 @@ view =
                     |> Review.Test.expectErrors
                         [ Review.Test.error
                             { message = "Found hardcoded user facing text: This text is user facing"
-                            , details = [ "Localize it with elm-i18next-gen" ]
+                            , details = [ "" ]
                             , under = "text \"This text is user facing\""
                             }
                         ]

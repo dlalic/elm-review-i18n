@@ -119,5 +119,5 @@ expressionVisitor expression direction context =
 error : String -> { message : String, details : List String }
 error text =
     { message = "Found hardcoded user facing text: " ++ text
-    , details = [ "Localize it with elm-i18next-gen" ]
+    , details = [ "" ]
     }
