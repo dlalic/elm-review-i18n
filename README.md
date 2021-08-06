@@ -28,5 +28,5 @@ config =
 You can try the example configuration above out by running the following command:
 
 ```bash
-elm-review --template dlalic/elm-review-i18n/example
+elm-review --template dlalic/elm-review-i18n/preview
 ```

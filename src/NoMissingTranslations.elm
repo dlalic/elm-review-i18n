@@ -49,7 +49,7 @@ This rule is not useful when REPLACEME.
 You can try this rule out by running the following command:
 
 ```bash
-elm-review --template dlalic/elm-review-i18n/example --rules NoMissingTranslations
+elm-review --template dlalic/elm-review-i18n/preview --rules NoMissingTranslations
 ```
 
 -}
