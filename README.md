@@ -1,11 +1,11 @@
 # elm-review-i18n
 
-Provides [`elm-review`](https://package.elm-lang.org/packages/jfmengels/elm-review/latest/) rules to REPLACEME.
+Provides [`elm-review`](https://package.elm-lang.org/packages/jfmengels/elm-review/latest/) rules to detect hardcoded user facing strings.
 
 
 ## Provided rules
 
-- [`NoMissingTranslations`](https://package.elm-lang.org/packages/dlalic/elm-review-i18n/1.0.0/NoMissingTranslations) - Reports REPLACEME.
+- [`NoMissingTranslations`](https://package.elm-lang.org/packages/dlalic/elm-review-i18n/1.0.0/NoMissingTranslations) - Reports hardcoded user facing strings.
 
 
 ## Configuration
