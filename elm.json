@@ -2,7 +2,7 @@
     "type": "package",
     "name": "dlalic/elm-review-i18n",
     "summary": "",
-    "license": "BSD-3-Clause",
+    "license": "MIT",
     "version": "1.0.0",
     "exposed-modules": [
         "NoMissingTranslations"
