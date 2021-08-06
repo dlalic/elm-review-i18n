@@ -27,4 +27,15 @@ view =
                             , under = "text \"This text is user facing\""
                             }
                         ]
+        , test "should not report an error text is not from Html module" <|
+            \() ->
+                """module NoMissingTranslations exposing (..)
+import Foo exposing (text)
+
+init : Cmd msg
+init =
+    text ""
+"""
+                    |> Review.Test.run rule
+                    |> Review.Test.expectNoErrors
         ]
