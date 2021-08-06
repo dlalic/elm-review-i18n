@@ -19,7 +19,7 @@ type Context
     | Import { aliasing : Maybe ModuleName, exposed : Bool }
 
 
-{-| Reports... REPLACEME
+{-| Reports hardcoded user facing strings
 
     config =
         [ NoMissingTranslations.rule
@@ -29,19 +29,19 @@ type Context
 ## Fail
 
     a =
-        "REPLACEME example to replace"
+        "Html.text " Hello ! ""
 
 
 ## Success
 
     a =
-        "REPLACEME example to replace"
+        "Html.text (hello translations name)"
 
 
 ## When (not) to enable this rule
 
-This rule is useful when REPLACEME.
-This rule is not useful when REPLACEME.
+This rule is useful when finding user facing hardcoded strings that should be localized.
+This rule is not useful when there is no i18n.
 
 
 ## Try it out
@@ -67,12 +67,14 @@ importVisitor node context =
         [ "Html" ] ->
             ( []
             , let
+                exposed : Bool
                 exposed =
                     Node.value node
                         |> .exposingList
                         |> Maybe.map (Node.value >> Exposing.exposesFunction "text")
                         |> Maybe.withDefault False
 
+                aliasing : Maybe ModuleName
                 aliasing =
                     Node.value node |> .moduleAlias |> Maybe.map Node.value
               in
