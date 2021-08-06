@@ -6,3 +6,15 @@ updates:
     interval: daily
     time: "04:00"
   open-pull-requests-limit: 10
+- package-ecosystem: elm
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  directory: "/review"
+- package-ecosystem: elm
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  directory: "/preview"
