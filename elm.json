@@ -1,5 +1,5 @@
 {
-    "type": "package",
+    "type": "application",
     "name": "dlalic/elm-review-i18n",
     "summary": "",
     "license": "MIT",
