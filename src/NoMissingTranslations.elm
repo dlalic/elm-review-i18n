@@ -35,7 +35,7 @@ type Context
 ## Success
 
     a =
-        "Html.text (hello translations name)"
+        "Html.text (hello translations)"
 
 
 ## When (not) to enable this rule

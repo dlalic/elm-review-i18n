@@ -22,6 +22,24 @@ config =
     ]
 ```
 
+## Fail
+
+```elm
+Html.text "Hello!"
+```
+
+## Success
+
+```elm
+Html.text (hello translations)
+```
+
+## When (not) to enable this rule
+
+This rule is useful when finding user facing hardcoded strings that should be localized.
+
+This rule is not useful when there is no i18n.
+
 
 ## Try it out
 
