@@ -48,3 +48,5 @@ You can try the example configuration above out by running the following command
 ```bash
 elm-review --template dlalic/elm-review-i18n/preview
 ```
+
+This project is expanded from [No-empty-html-text](https://github.com/leojpod/review-no-empty-html-text) rule.
